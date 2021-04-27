@@ -1,0 +1,613 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: normal;
+  font-family: "Noto Serif", serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.81);
+  background-color: rgb(235, 235, 235);
+}
+
+#logo {
+  display: inline-block;
+  transform: translate(20px, 5px);
+}
+
+#logo img {
+  width: 5em;
+  transition: 1.5s all;
+}
+
+nav {
+  width: 50%;
+  margin: 20px;
+  margin-right: 100px;
+  display: inline-block;
+}
+
+nav .lista {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lista li {
+  margin: 5px;
+  font-size: 100%;
+  font-weight: bolder;
+  list-style: none;
+  display: inherit;
+  transition: 0.2s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.lista li:hover {
+  margin: 0px;
+  text-shadow: 1px 1px 16px rgba(150, 150, 149, 1);
+  font-weight: bolder;
+}
+
+.titulos {
+  color: rgb(6, 102, 158);
+  font-weight: bolder;
+  word-spacing: 0px;
+  font-style: italic;
+  font-size: 40px;
+  margin: 20px;
+}
+
+.subtitulo {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 24px;
+  margin: 20px;
+  font-weight: bolder;
+}
+
+.imagenesIlustrativas {
+  margin: 50px;
+  background-image: url("../images/fishbackground.png");
+  display: grid;
+  grid-template-areas:
+    "image1 image2 image3"
+    "iframe iframe iframe";
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 350px 400px;
+  justify-items: center;
+  align-items: center;
+}
+
+.imagenesIlustrativas #imagen1 {
+  grid-area: image1;
+  width: 90%;
+}
+
+.imagenesIlustrativas #imagen2 {
+  grid-area: image2;
+  width: 90%;
+}
+
+.imagenesIlustrativas #imagen3 {
+  grid-area: image3;
+  width: 90%;
+}
+
+.imagenesIlustrativas iframe {
+  grid-area: iframe;
+}
+
+.link {
+  color: rgb(6, 102, 158);
+  text-decoration: none;
+}
+
+table {
+  background-image: url("../images/borabora.png");
+  background-size: cover;
+  font-family: "Permanent Marker", cursive;
+  font-weight: bolder;
+  font-size: 18px;
+  margin: 20px;
+  width: 950px;
+  height: 400px;
+  text-align: center;
+}
+
+.titulosTabla {
+  color: rgb(6, 102, 158);
+  font-weight: bolder;
+}
+
+table ol {
+  font-weight: bolder;
+  color: #5daa31;
+  list-style: disc inside none;
+}
+
+aside {
+  width: 90%;
+  margin-left: 50px;
+}
+
+.parrafos {
+  font-size: 20px;
+  text-align: left;
+  line-height: 30px;
+  margin: 50px;
+}
+
+form {
+  -webkit-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+  background-color: rgb(235, 235, 235);
+  padding-bottom: 30px;
+  padding-top: 10px;
+  margin: 50px;
+  margin-left: 25%;
+  width: 50%;
+}
+
+.tituloForm {
+  font-size: 30px;
+}
+
+form #info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+form #info input {
+  width: 300px;
+  transition: all 1s;
+}
+
+form #info input:focus {
+  width: 350px;
+  font-size: 20px;
+}
+
+form select {
+  width: 250px;
+  margin-left: 10px;
+}
+
+
+form #paquete {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px 0px 100px;
+}
+
+form .parrafosInput {
+  font-size: 16px;
+}
+
+form input {
+  margin: 10px;
+}
+
+form .formButtons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+form .button {
+  font-size: 15px;
+}
+
+form .button.sendButton {
+  order: -1;
+}
+
+footer {
+  padding: 10px;
+  padding-bottom: 0px;
+  box-shadow: 0px -3px 6px 0px rgba(50, 50, 50, 0.75);
+  background-color: #CCD33D;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Permanent Marker", cursive;
+}
+
+footer .redes {
+  display: flex;
+}
+
+footer a {
+  margin-left: 10px;
+  transition: 0.5s;
+  color: rgb(6, 102, 158);
+}
+
+footer a:hover {
+  text-shadow: 1px 1px 16px rgba(150, 150, 149, 1);
+  font-weight: bolder;
+}
+
+footer img {
+  display: none;
+}
+
+.dropdown {
+  padding: 20px;
+}
+
+#miPerfil {
+  -webkit-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+  background-color: rgb(235, 235, 235);
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+  margin: 50px;
+  margin-left: 25%;
+}
+
+#miPerfil img {
+  width: 50%;
+}
+
+.tituloPerfil {
+  font-size: 35px;
+}
+
+#carousel {
+  display: inline-block;
+  width: 600px;
+  margin-bottom: 50px;
+  margin-left: 200px;
+}
+
+#carousel img {
+  width: 450px;
+  height: 350px;
+}
+
+@media only screen and (min-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Noto Serif", serif;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.81);
+    background-color: rgb(235, 235, 235);
+  }
+
+  #logo {
+    display: inline-block;
+    transform: translate(20px, 10px);
+  }
+
+  #logo img {
+    width: 4em;
+    transition: 1.5s all;
+  }
+
+  #logo img:hover {
+    transform: rotate(-360deg);
+  }
+
+  nav {
+    width: 500px;
+    margin: 15px;
+    margin-right: 100px;
+    display: inline-block;
+  }
+
+  nav .lista {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lista li {
+    margin: 5px;
+    list-style: none;
+    display: inherit;
+    transition: 1s;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .lista li:hover {
+    margin: 0px;
+    text-shadow: 1px 1px 16px rgba(150, 150, 149, 1);
+    font-weight: bolder;
+  }
+
+  .lista li a:hover {
+    color: #73ddcd;
+  }
+
+  .titulos {
+    color: rgb(6, 102, 158);
+    font-weight: bolder;
+    word-spacing: 0.5px;
+    font-style: italic;
+    margin: 20px;
+    font-size: 45px;
+  }
+
+  .subtitulo {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 24px;
+    margin: 20px;
+    font-weight: bolder;
+  }
+
+  .imagenesIlustrativas {
+    margin: 50px;
+    background-image: url("../images/fishbackground.png");
+    display: grid;
+    grid-template-areas:
+      "image1 image2 image3"
+      "iframe iframe iframe";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 450px 400px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .imagenesIlustrativas #imagen1 {
+    grid-area: image1;
+    width: 90%;
+    transition: 1s;
+  }
+
+  .imagenesIlustrativas #imagen1:hover {
+    width: 95%;
+    -webkit-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+  }
+
+  .imagenesIlustrativas #imagen2 {
+    grid-area: image2;
+    width: 90%;
+    transition: 1s;
+  }
+
+  .imagenesIlustrativas #imagen2:hover {
+    width: 100%;
+    -webkit-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+  }
+
+  .imagenesIlustrativas #imagen3 {
+    grid-area: image3;
+    width: 90%;
+    transition: 1s;
+  }
+
+  .imagenesIlustrativas #imagen3:hover {
+    width: 100%;
+    -webkit-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+  }
+
+  .imagenesIlustrativas iframe {
+    grid-area: iframe;
+  }
+
+  .link {
+    color: rgb(6, 102, 158);
+    text-decoration: none;
+  }
+
+  table {
+    background-image: url("../images/borabora.png");
+    background-size: cover;
+    font-family: "Permanent Marker", cursive;
+    font-size: 18px;
+    margin: 20px;
+    margin-left: 15%;
+    width: 950px;
+    height: 400px;
+    text-align: center;
+  }
+
+  .titulosTabla {
+    color: rgb(6, 102, 158);
+    font-weight: bolder;
+  }
+
+  table ol {
+    color: #5daa31;
+    list-style: disc inside none;
+    margin-left: 30%;
+  }
+
+  aside {
+    display: inline-block;
+    width: 50%;
+    margin-left: 50px;
+  }
+  
+  .parrafos {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 24px;
+    margin: 20px;
+  }
+  
+  form {
+    -webkit-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+    background-color: rgb(235, 235, 235);
+    padding-bottom: 30px;
+    margin: 50px;
+    margin-left: 100px;
+    width: 30%;
+    display: inline-block;
+  }
+
+  .tituloForm {
+    font-size: 30px;
+  }
+
+  form #info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+  form #info input {
+    width: 250px;
+    transition: all 1s;
+  }
+
+  form #info input:focus {
+    width: 300px;
+    font-size: 20px;
+  }
+
+  form select {
+    width: 250px;
+    margin-left: 10px;
+  }
+
+  form #paquete {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 0px 100px;
+  }
+
+  form .parrafosInput {
+    font-size: 16px;
+  }
+
+  form input {
+    margin: 10px;
+  }
+
+  form .formButtons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  form .button {
+    font-size: 15px;
+  }
+
+  form .button:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgb(241, 139, 136);
+  }
+
+  form .button.sendButton {
+    order: -1;
+  }
+
+  form .button.sendButton:hover {
+    background: rgb(174, 241, 136);
+    transition: 0.5s;
+  }
+
+  footer {
+    padding: 10px;
+    padding-bottom: 0px;
+    box-shadow: 0px -3px 6px 0px rgba(50, 50, 50, 0.75);
+    background-color: #CCD33D;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Permanent Marker", cursive;
+  }
+
+  footer .redes {
+    display: flex;
+  }
+
+  footer a {
+    margin-left: 10px;
+    transition: 0.5s;
+    color: rgb(6, 102, 158);
+  }
+
+  footer a:hover {
+    text-shadow: 1px 1px 16px rgba(150, 150, 149, 1);
+    font-weight: bolder;
+  }
+
+  footer img {
+    display: block;
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    width: 80px;
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  footer img:hover {
+    transform: scale(1.2);
+  }
+
+  .dropdown {
+    padding: 20px;
+  }
+
+  #miPerfil {
+    -webkit-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+    background-color: rgb(235, 235, 235);
+    font-family: "Permanent Marker", cursive;
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    margin: 50px;
+  }
+
+  #miPerfil img {
+    width: 70%;
+  }
+
+  .tituloPerfil {
+    font-size: 35px;
+  }
+
+  #carousel {
+    display: inline-block;
+    width: 600px;
+    margin-left: 200px;
+  }
+
+  #carousel img {
+    width: 450px;
+    height: 350px;
+  }
+}

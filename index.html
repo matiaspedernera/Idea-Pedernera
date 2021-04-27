@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Viaja a Bora Bora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="El mejor plan de escape de tu rutina diaria, disfruta de una imperdible aventura, solo o acompañado, en un destino soñado. Visita Bora Bora">
+    <meta name="keywords" content="VIAJES, AVENTURA, BORA BORA, ISLA, PARAISO, MAR, HOTEL, PLAYA, POLINESIA FRANCESA">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="shorcut icon" href="./images/icon-min.png">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html" class="link">
+                <img class="header__logo--img" src="./images/world-min.png">
+            </a>
+        </div>
+        <nav>
+            <ul class="lista">
+                <li><a href="otrosDestinos.html" class="link">Otros Destinos</a></li>
+                <li><a href="idioma.html" class="link">Idioma</a></li>
+                <li><a href="trabajaConNosotros.html" class="link">Trabajá con nosotros</a></li>
+                <li><a href="miPerfil.html" class="link">Mi Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="titulos">Viaja a Bora Bora</h1>
+    <p class="subtitulo">Conocida como el patio de juegos de los ricos y famosos, esta hermosa isla de la Polinesia
+        Francesa te ofrece
+        playas de arena blanca, exuberantes valles tropicales y hermosas aguas cristalinas.</p>
+    <div class="album">
+        <img class="album__photo rounded" id="imagen1" src="./images/borabora1-min.jpg" alt="vista panoramica de bora bora">
+        <img class="album__photo rounded" id="imagen2" src="./images/borabora2-min.jpg"
+            alt="dos personas disfrutando el mar">
+        <img class="album__photo rounded" id="imagen3" src="./images/borabora3-min.jpg" alt="vista satelital de la isla">
+        <iframe class="album__video" width="683" height="384" src="https://www.youtube.com/embed/5YIVLenWD5Y"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <table class="tabla">
+        <thead>
+            <h2 class="titulos">Descripción de los planes</h2>
+            <tr>
+                <td class="tabla__titulosTabla">
+                    <h3>Tipo de Paquete</h3>
+                </td>
+                <td class="tabla__titulosTabla">
+                    <h3>Precio</h3>
+                </td>
+                <td class="tabla__titulosTabla">
+                    <h3>Incluye</h3>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Turista Básico</td>
+                <td>3.000 USD</td>
+                <td>
+                    <ol class="tabla__items">
+                        <li>Para 1 persona</li>
+                        <li>5 días y 4 noches</li>
+                        <li>Incluye estadía en hostel</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>Familiar básico</td>
+                <td>10.000 USD</td>
+                <td>
+                    <ol class="tabla__items">
+                        <li>Para 4 personas</li>
+                        <li>7 días y 6 noches</li>
+                        <li>Incluye estadía y desayuno en hotel 3 estrellas</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>Familiar all inclusive</td>
+                <td>15.000 USD</td>
+                <td>
+                    <ol class="tabla__items">
+                        <li>Para 5 personas</li>
+                        <li>8 días y 7 noches</li>
+                        <li>Incluye estadía y desayuno en hotel 4 estrellas</li>
+                        <li>Viajes y recorridos exclusivos!</li>
+                    </ol>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <form class="formulario">
+        <h2 class="titulos formulario__tituloForm">Ingrese su información</h2>
+        <div class="formulario__info">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="email">
+            <select name="País de donde proviene">
+                <option value="">--Seleccione su país--</option>
+                <option value="AR">Argentina</option>
+                <option value="UR">Uruguay</option>
+                <option value="BR">Brasil</option>
+                <option value="BO">Bolivia</option>
+            </select>
+        </div>
+        <div class="formulario__paquete">
+            <p class="formulario__paquete-parrafosInput">Seleccione un paquete</p>
+            <div>
+                <input type="radio" id="TuristaBasico" value="Turista Básico" name="paquete">
+                <label class="parrafosInput" for="TuristaBasico">Turista Básico</label>
+            </div>
+            <div>
+                <input type="radio" id="FamiliarBasico" value="Familiar Básico" name="paquete">
+                <label class="parrafosInput" for="FamiliarBasico">Familiar Básico</label>
+            </div>
+            <div>
+                <input type="radio" id="FamiliarAllInclusive" value="Familiar All Inclusive" name="paquete">
+                <label class="parrafosInput" for="FamiliarAllInclusive">Familiar All Inclusive</label>
+            </div>
+        </div>
+        <div class="formulario__formButtons">
+            <input class="btn btn-outline-secondary button" type="reset" value="Limpiar formulario">
+            <button type="button" class="btn btn-outline-secondary button sendButton" data-toggle="modal"
+                data-target="#exampleModal">
+                Enviar
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase" id="exampleModalLabel">Bienvenidx!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body font-italic">
+                            Muchas gracias por completar tu información, nos contactaremos con usted en la brevedad.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success font-weight-bold"
+                                data-dismiss="modal">Entendido!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <aside class="historia">
+        <h2 class="titulos">Un poco sobre Bora Bora...</h2>
+        <p class="historia__parrafo">¿Quién no ha soñado alguna vez con disfrutar de un paisaje como éste, de que se
+            pare el mundo y las preocupaciones se dejen a un lado para disfrutar del paraíso terrenal?
+            </br>
+            Sus playas, su belleza, y la razón de que el turismo masivo no haya llegado aún a este paraíso de la
+            recóndita Polinesia Francesa, hacen de Bora Bora un increíble destino.
+            </br>
+            Cada vez son más personas las que escogen pasar su luna de miel en Bora Bora, que está situado al noroeste
+            de Tahití y al sur de Hawaii, porque es un lugar paradisíaco y mágico, un lugar de ensueño que está formado
+            por un volcán extinto, rodeado por una laguna separada del mar por un arrecife.
+            </br>
+            Desde Bora Bora podrás observar otras islas como las islas de Tahaa, Raiatea y Maupiti, que al igual que
+            este lugar impresionante está rodeado de arrecifes de coral de los que podrás disfrutar perfectamente con
+            sus aguas cristalinas.
+        </p>
+    </aside>
+    <footer class="footer">
+        <p>Bases y condiciones</p>
+        <div class="footer__redes">
+            <img class="footer__redes--wpp" src="./images/wpp-min.png">
+            <p>Seguinos en nuestras redes!</p>
+            <a class="footer__redes--social-media" href="https://twitter.com/">Twitter</a>
+            <a class="footer__redes--social-media" href="https://www.instagram.com/">Instagram</a>
+            <a class="footer__redes--social-media" href="https://www.youtube.com/">Youtube</a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
