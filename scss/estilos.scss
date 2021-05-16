@@ -8,7 +8,7 @@
   -moz-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
 }
-@mixin fotos($varWidth,$varWidthHover) {
+@mixin fotos($varWidth, $varWidthHover) {
   width: $varWidth;
   &:hover {
     width: $varWidthHover;
@@ -24,7 +24,6 @@ body {
   line-height: normal;
   font-family: $primary-font;
 }
-
 
 .titulos {
   color: $primary-font-color;
@@ -55,11 +54,9 @@ body {
   justify-content: space-between;
   box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.81);
   background-color: rgb(235, 235, 235);
-
   &__logo {
     display: inline-block;
     transform: translate(20px, 5px);
-
     &--img {
       width: 5em;
       transition: 1.5s all;
@@ -105,15 +102,15 @@ body {
     transition: 1s;
   }
   #imagen1 {
-    @include fotos(90%,95%);
+    @include fotos(90%, 95%);
     grid-area: image1;
   }
   #imagen2 {
-    @include fotos(95%,100%);
+    @include fotos(95%, 100%);
     grid-area: image2;
   }
   #imagen3 {
-    @include fotos(90%,95%);
+    @include fotos(90%, 95%);
     grid-area: image3;
   }
   &__video {
@@ -135,7 +132,6 @@ body {
     font-weight: bolder;
   }
   &__items {
-    font-weight: bolder;
     color: #5daa31;
     list-style: disc inside none;
   }
@@ -160,25 +156,20 @@ body {
     flex-direction: column;
     margin-left: 50px;
     input {
-      width: 300px;
-      transition: all 1s;
-      &:focus {
-        width: 350px;
-        font-size: 20px;
-      }
+      width: 80%;
+      font-size: 13px;
     }
     select {
-      width: 250px;
+      width: 80%;
+      font-size: 13px;
       margin-left: 10px;
     }
   }
   &__paquete {
     display: flex;
     flex-direction: column;
-    margin: 20px 0px 0px 100px;
-    &-parrafosInput {
-      font-size: 16px;
-    }
+    margin: 20px 0px 0px 90px;
+    font-size: 15px;
   }
   &__formButtons {
     display: flex;
@@ -193,6 +184,7 @@ body {
     }
   }
 }
+
 .historia {
   width: 90%;
   margin-left: 50px;
@@ -203,6 +195,7 @@ body {
     margin: 50px;
   }
 }
+
 .footer {
   padding: 10px;
   padding-bottom: 0px;
@@ -228,6 +221,7 @@ body {
     }
   }
 }
+
 .perfil {
   @include shadow;
   background-color: rgb(235, 235, 235);
@@ -246,6 +240,7 @@ body {
     width: 50%;
   }
 }
+
 #carousel {
   display: inline-block;
   width: 600px;
@@ -261,60 +256,25 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
   .titulos {
-    color: $primary-font-color;
-    font-weight: bolder;
     word-spacing: 0.5px;
-    font-style: italic;
-    margin: 20px;
     font-size: 45px;
   }
-  .subtitulo {
-    font-size: 16px;
-    text-align: justify;
-    line-height: 24px;
-    margin: 20px;
-    font-weight: bolder;
-  }
   .header {
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.81);
-    background-color: rgb(235, 235, 235);
     &__logo {
-      display: inline-block;
       transform: translate(20px, 10px);
       &--img {
         width: 4em;
-        transition: 1.5s all;
         &:hover {
           transform: rotate(-360deg);
         }
       }
     }
   }
+
   nav {
-    width: 500px;
-    margin: 15px;
-    margin-right: 100px;
-    display: inline-block;
     .lista {
-      display: flex;
-      justify-content: space-between;
       li {
-        margin: 5px;
-        list-style: none;
-        display: inherit;
-        transition: 1s;
-        &:hover {
-          margin: 0px;
-          text-shadow: 1px 1px 16px rgba(150, 150, 149, 1);
-          font-weight: bolder;
-        }
         a:hover {
           @include links;
           color: #73ddcd;
@@ -323,101 +283,34 @@ body {
     }
   }
   .album {
-    margin: 50px;
-    background-image: url("../images/fishbackground-min.png");
-    display: grid;
-    grid-template-areas:
-      "image1 image2 image3"
-      "iframe iframe iframe";
-    grid-template-columns: 33% 33% 33%;
     grid-template-rows: 450px 400px;
-    justify-items: center;
-    align-items: center;
-    &__photo {
-      transition: 1s;
-    }
-    #imagen1 {
-      @include fotos(90%,95%);
-      grid-area: image1;
-    }
-    #imagen2 {
-      @include fotos(95%,100%);
-      grid-area: image2;
-    }
-    #imagen3 {
-      @include fotos(90%,95%);
-      grid-area: image3;
-    }
-    &__video {
-      grid-area: iframe;
-    }
   }
   .tabla {
-    background-image: url("../images/borabora-min.png");
-    background-size: cover;
-    font-family: $secondary-font;
-    font-size: 18px;
-    margin: 20px;
     margin-left: 15%;
-    width: 950px;
-    height: 400px;
-    text-align: center;
-    &__titulosTabla {
-      color: $primary-font-color;
-      font-weight: bolder;
-    }
     &__items {
-      color: #5daa31;
-      list-style: disc inside none;
       margin-left: 30%;
     }
   }
+
   .formulario {
-    @include shadow;
-    background-color: rgb(235, 235, 235);
-    padding-bottom: 30px;
-    margin: 50px;
     margin-left: 100px;
     width: 30%;
     display: inline-block;
-    input {
-      margin: 10px;
-    }
-    &__tituloForm {
-      font-size: 30px;
-    }
     &__info {
-      display: flex;
-      flex-direction: column;
-      margin-left: 50px;
       input {
         width: 250px;
-        transition: all 1s;
+        transition: 1s;
         &:focus {
-          width: 300px;
-          font-size: 20px;
+          background: rgb(228, 255, 212);
+          color:#333;
         }
       }
       select {
         width: 250px;
-        margin-left: 10px;
-      }
-    }
-    &__paquete {
-      display: flex;
-      flex-direction: column;
-      margin: 20px 0px 0px 100px;
-      &-parrafosInput {
-        font-size: 16px;
       }
     }
     &__formButtons {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 20px;
-      margin-left: 20px;
       .button {
-        font-size: 15px;
         &:hover {
           cursor: pointer;
           transition: 0.5s;
@@ -425,7 +318,6 @@ body {
         }
       }
       .button.sendButton {
-        order: -1;
         &:hover {
           background: rgb(174, 241, 136);
           transition: 0.5s;
@@ -433,10 +325,10 @@ body {
       }
     }
   }
+
   .historia {
     display: inline-block;
     width: 50%;
-    margin-left: 50px;
     &__parrafo {
       font-size: 16px;
       text-align: justify;
@@ -444,26 +336,9 @@ body {
       margin: 20px;
     }
   }
+
   .footer {
-    padding: 10px;
-    padding-bottom: 0px;
-    box-shadow: 0px -3px 6px 0px rgba(50, 50, 50, 0.75);
-    background-color: #ccd33d;
-    display: flex;
-    justify-content: space-between;
-    font-family: $secondary-font;
     &__redes {
-      display: flex;
-      &--social-media {
-        margin-left: 10px;
-        transition: 0.5s;
-        color: $primary-font-color;
-        &:hover {
-          @include links;
-          text-shadow: 1px 1px 16px rgba(150, 150, 149, 1);
-          font-weight: bolder;
-        }
-      }
       &--wpp {
         display: block;
         position: fixed;
@@ -478,33 +353,18 @@ body {
       }
     }
   }
+
   .perfil {
     @include shadow;
-    background-color: rgb(235, 235, 235);
-    font-family: $secondary-font;
-    display: flex;
     display: inline-block;
-    flex-direction: column;
     width: 30%;
-    padding: 20px;
     margin: 50px;
-    &__dropdown {
-      padding: 20px;
-    }
     &__foto {
       width: 70%;
     }
   }
+
   #carousel {
-    display: inline-block;
-    width: 600px;
-    margin-left: 200px;
-    .tituloPerfil {
-      font-size: 35px;
-    }
-    img {
-      width: 450px;
-      height: 350px;
-    }
+    margin-left: 70px;
   }
 }
