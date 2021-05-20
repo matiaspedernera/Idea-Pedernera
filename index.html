@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="shorcut icon" href="./images/icon-min.png">
+    <link rel="shorcut icon" href="./images/icons/icon-min.png">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -20,27 +20,29 @@
     <header class="header">
         <div class="header__logo">
             <a href="index.html" class="link">
-                <img class="header__logo--img" src="./images/world-min.png">
+                <img class="header__logo--img" src="./images/icons/world-min.png">
             </a>
         </div>
         <nav>
             <ul class="lista">
                 <li><a href="otrosDestinos.html" class="link">Otros Destinos</a></li>
-                <li><a href="idioma.html" class="link">Idioma</a></li>
-                <li><a href="#form" class="link">Contactanos!</a></li>
+                <li><a href="sobreNosotros.html" class="link">Sobre Nosotros</a></li>
+                <li><a href="sobreNosotros.html#form" class="link">Contactanos!</a></li>
                 <li><a href="miPerfil.html" class="link">Mi Perfil</a></li>
             </ul>
         </nav>
     </header>
-    <h1 class="titulos">Viaja a Bora Bora</h1>
+    <h1 class="titulos margin-navbar">Viaja a Bora Bora</h1>
     <p class="subtitulo">Conocida como el patio de juegos de los ricos y famosos, esta hermosa isla de la Polinesia
         Francesa te ofrece
         playas de arena blanca, exuberantes valles tropicales y hermosas aguas cristalinas.</p>
     <div class="album">
-        <img class="album__photo rounded" id="imagen1" src="./images/borabora1-min.jpg" alt="vista panoramica de bora bora">
+        <img class="album__photo rounded" id="imagen1" src="./images/borabora1-min.jpg"
+            alt="vista panoramica de bora bora">
         <img class="album__photo rounded" id="imagen2" src="./images/borabora2-min.jpg"
             alt="dos personas disfrutando el mar">
-        <img class="album__photo rounded" id="imagen3" src="./images/borabora3-min.jpg" alt="vista satelital de la isla">
+        <img class="album__photo rounded" id="imagen3" src="./images/borabora3-min.jpg"
+            alt="vista satelital de la isla">
         <iframe class="album__video" width="683" height="384" src="https://www.youtube.com/embed/5YIVLenWD5Y"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -98,8 +100,8 @@
             </tr>
         </tbody>
     </table>
-    <form class="formulario" id="form">
-        <h2 class="titulos formulario__tituloForm">Contactanos!</h2>
+    <form class="formulario">
+        <h2 class="titulos formulario__tituloForm">¿Estás interesado?</h2>
         <div class="formulario__info">
             <input type="text" placeholder="Nombre">
             <input type="email" placeholder="email">
@@ -172,13 +174,21 @@
         </p>
     </aside>
     <footer class="footer">
-        <p>Bases y condiciones</p>
+        <p>Viaja Ahora®</p>
         <div class="footer__redes">
-            <img class="footer__redes--wpp" src="./images/wpp-min.png">
+            <a href="https://wa.me/5493512292336" target="_blank">
+                <img class="footer__redes--wpp" src="./images/icons/wpp-min.png">
+            </a>
             <p>Seguinos en nuestras redes!</p>
-            <a class="footer__redes--social-media" href="https://twitter.com/">Twitter</a>
-            <a class="footer__redes--social-media" href="https://www.instagram.com/">Instagram</a>
-            <a class="footer__redes--social-media" href="https://www.youtube.com/">Youtube</a>
+            <a href="https://twitter.com/">
+                <img class="footer__redes--social-media" src="./images/icons/twitter.png">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img class="footer__redes--social-media" src="./images/icons/instagram.png">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img class="footer__redes--social-media" src="./images/icons/youtube.png">
+            </a>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

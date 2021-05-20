@@ -2,7 +2,14 @@
 
 @mixin links {
   text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
 }
+
 @mixin shadow {
   -webkit-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
@@ -30,43 +37,49 @@ body {
   font-weight: bolder;
   word-spacing: 0px;
   font-style: italic;
-  font-size: 40px;
+  font-size: 25px;
   margin: 20px;
 }
 
+.margin-navbar {
+  margin-top: 20px;
+}
+
 .subtitulo {
-  font-size: 16px;
+  font-size: 15px;
   text-align: justify;
-  line-height: 24px;
+  line-height: 20px;
   margin: 20px;
   font-weight: bolder;
 }
 
 .link {
+  @include links;
   color: $primary-font-color;
-  &:hover {
-    @include links;
-  }
 }
 
 .header {
   display: flex;
+  position: static;
+  width: 100%;
+  top: 0;
   justify-content: space-between;
   box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.81);
-  background-color: rgb(235, 235, 235);
+  background-color: $card-color;
+  z-index: 1;
   &__logo {
     display: inline-block;
     transform: translate(20px, 5px);
     &--img {
-      width: 5em;
+      width: 4em;
       transition: 1.5s all;
     }
   }
 
   nav {
-    width: 50%;
-    margin: 20px;
-    margin-right: 100px;
+    width: 70%;
+    margin: 15px;
+    margin-right: 50px;
     display: inline-block;
     .lista {
       display: flex;
@@ -88,7 +101,6 @@ body {
   }
 }
 .album {
-  margin: 50px;
   background-image: url("../images/fishbackground-min.png");
   display: grid;
   grid-template-areas:
@@ -122,9 +134,8 @@ body {
   background-size: cover;
   font-family: $secondary-font;
   font-weight: bolder;
-  font-size: 18px;
-  margin: 20px;
-  width: 950px;
+  font-size: 14px;
+  width: 100%;
   height: 400px;
   text-align: center;
   &__titulosTabla {
@@ -139,17 +150,18 @@ body {
 
 .formulario {
   @include shadow;
-  background-color: rgb(235, 235, 235);
+  background-color: $card-color;
   padding-bottom: 30px;
   padding-top: 10px;
   margin: 50px;
   margin-left: 25%;
-  width: 40%;
+  width: 50%;
   input {
     margin: 10px;
   }
   &__tituloForm {
     font-size: 30px;
+    text-align: center;
   }
   &__info {
     display: flex;
@@ -189,10 +201,10 @@ body {
   width: 90%;
   margin-left: 50px;
   &__parrafo {
-    font-size: 20px;
+    font-size: 17px;
     text-align: left;
     line-height: 30px;
-    margin: 50px;
+    margin: 30px;
   }
 }
 
@@ -210,48 +222,13 @@ body {
       display: none;
     }
     &--social-media {
-      margin-left: 10px;
+      margin-left: 20px;
+      width: 30px;
       transition: 0.5s;
-      color: $primary-font-color;
       &:hover {
-        @include links;
-        text-shadow: 1px 1px 16px rgba(150, 150, 149, 1);
-        font-weight: bolder;
+        transform: scale(1.5);
       }
     }
-  }
-}
-
-.perfil {
-  @include shadow;
-  background-color: rgb(235, 235, 235);
-  font-family: $secondary-font;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  padding: 20px;
-  margin: 50px;
-  margin-left: 25%;
-  &__dropdown {
-    padding: 20px;
-  }
-  &__foto {
-    width: 50%;
-  }
-}
-
-#carousel {
-  display: inline-block;
-  width: 600px;
-  margin-bottom: 50px;
-  margin-left: 200px;
-  .tituloPerfil {
-    font-size: 35px;
-  }
-  img {
-    width: 450px;
-    height: 350px;
   }
 }
 
@@ -260,7 +237,18 @@ body {
     word-spacing: 0.5px;
     font-size: 45px;
   }
+
+  .margin-navbar {
+    margin-top: 100px;
+  }
+
+  .subtitulo {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .header {
+    position: fixed;
     &__logo {
       transform: translate(20px, 10px);
       &--img {
@@ -270,14 +258,17 @@ body {
         }
       }
     }
-  }
 
-  nav {
-    .lista {
-      li {
-        a:hover {
-          @include links;
-          color: #73ddcd;
+    nav {
+      width: 50%;
+      margin: 20px;
+      margin-right: 100px;
+      .lista {
+        li {
+          a:hover {
+            @include links;
+            color: #73ddcd;
+          }
         }
       }
     }
@@ -286,7 +277,9 @@ body {
     grid-template-rows: 450px 400px;
   }
   .tabla {
+    font-size: 18px;
     margin-left: 15%;
+    width: 950px;
     &__items {
       margin-left: 30%;
     }
@@ -296,13 +289,16 @@ body {
     margin-left: 100px;
     width: 30%;
     display: inline-block;
+    &__tituloForm {
+      font-size: 25px;
+    }
     &__info {
       input {
         width: 250px;
         transition: 1s;
         &:focus {
           background: rgb(228, 255, 212);
-          color:#333;
+          color: #333;
         }
       }
       select {
@@ -340,6 +336,7 @@ body {
   .footer {
     &__redes {
       &--wpp {
+        z-index: 2;
         display: block;
         position: fixed;
         top: 0px;
@@ -352,19 +349,5 @@ body {
         }
       }
     }
-  }
-
-  .perfil {
-    @include shadow;
-    display: inline-block;
-    width: 30%;
-    margin: 50px;
-    &__foto {
-      width: 70%;
-    }
-  }
-
-  #carousel {
-    margin-left: 70px;
   }
 }

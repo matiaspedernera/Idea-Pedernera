@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Viaja a Bora Bora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="El mejor plan de escape de tu rutina diaria, disfruta de una imperdible aventura, solo o acompañado, en un destino soñado. Visita Bora Bora">
+    <meta name="keywords" content="VIAJES, AVENTURA, BORA BORA, ISLA, PARAISO, MAR, HOTEL, PLAYA, POLINESIA FRANCESA">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="shorcut icon" href="./images/icons/icon-min.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/sobreNosotros.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html" class="link">
+                <img class="header__logo--img" src="./images/icons/world-min.png">
+            </a>
+        </div>
+        <nav>
+            <ul class="lista">
+                <li><a href="otrosDestinos.html" class="link">Otros Destinos</a></li>
+                <li><a href="sobreNosotros.html" class="link">Sobre Nosotros</a></li>
+                <li><a href="#form" class="link">Contactanos!</a></li>
+                <li><a href="miPerfil.html" class="link">Mi Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="titulos margin-navbar">Conocenos un poco más!</h1>
+    <p class="subtitulo">Preguntas frecuentes</p>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        Contactate con nosotros!
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <form id="form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Tu email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Ingresar email">
+                            <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tus datos personales
+                                con nadie.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Número de teléfono</label>
+                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Teléfono">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Quiero recibir novedades!</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Escribinos tu duda o mensaje!</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                        </div>
+                        <div class="form-buttons">
+                            <input class="btn btn-outline-secondary button" type="reset" value="Limpiar formulario">
+                            <button type="button" class="btn btn-outline-secondary button sendButton"
+                                data-toggle="modal" data-target="#exampleModal">
+                                Enviar
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-uppercase" id="exampleModalLabel">Bienvenidx!
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body font-italic">
+                                            Muchas gracias por completar tu información, nos contactaremos con usted en
+                                            la
+                                            brevedad.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success font-weight-bold"
+                                                data-dismiss="modal">Entendido!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link link" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Quiénes somos?
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Hola! Nos presentamos, somos un equipo integrado por 10 personas, que desde hace más de 5 años,
+                    estamos motivadas por el mismo objetivo,
+                    dar los mejores servicios para que vos, la persona que está leyendo esto, tenga la mejor experiencia
+                    en su viaje.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        ¿Qué buscamos?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    Buscamos proveer las mejores opciones de viajes para que vos lo disfrutes, ya sea una escapada, unas
+                    vacaciones programadas o un viaje de trabajo. Sobre todo te damos toda la información que
+                    necesitarás sobre el destino que vas a visitar, te informamos sobre sus principales atracciones,
+                    las actividades que podrás realizar, hermosas postales que podrás admirar y más información, para
+                    que disfrutes al máximo cada momento.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFour">
+                        Nuestro compromiso con los usuarios
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    Nos comprometemos a que tu viaje sea el deseado por vos y que te lleves la mejor experiencia, por lo
+                    tanto ofrecemos lo mejor en cuanto a paquetes, alojamientos y estadía y actividades a realizar. Cada
+                    uno de estos puntos se seleccionaron entre varias opciones para ofrecer lo mejor en cuanto a precio
+                    pero sin
+                    perder la calidad.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn btn-link link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                        aria-expanded="false" aria-controls="collapseFive">
+                        Comprometidos con los tiempos actuales
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                    Estamos conscientes de la situación mundial que se está viviendo a causa del covid-19. Por ello
+                    utilizamos las mejores precauciones y cuidados porque tu salud es lo primero. Solo encontrarás en
+                    nuestros destinos disponibles, aquellos lugares habilitados sanitariamente para turismo, al igual
+                    que hospedajes y actividades que tengan estrictos protocolos sanitarios.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                    <button class="btn btn-link link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                        aria-expanded="false" aria-controls="collapseSix">
+                        Nuestro futuro
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div class="card-body">
+                    Siempre enfocados en dar experiencias únicas, ampliaremos los destinos disponibles así como también
+                    las mejores ofertas y paquetes a los mismos. Para ofrecer lo mejor para los mejores! Quedate atento
+                    a nuestros destinos que se van a venir muchos más.
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Viaja Ahora®</p>
+        <div class="footer__redes">
+            <a href="https://wa.me/5493512292336" target="_blank">
+                <img class="footer__redes--wpp" src="./images/icons/wpp-min.png">
+            </a>
+            <p>Seguinos en nuestras redes!</p>
+            <a href="https://twitter.com/">
+                <img class="footer__redes--social-media" src="./images/icons/twitter.png">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img class="footer__redes--social-media" src="./images/icons/instagram.png">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img class="footer__redes--social-media" src="./images/icons/youtube.png">
+            </a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

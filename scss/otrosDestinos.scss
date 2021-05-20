@@ -1,0 +1,75 @@
+@import "variables";
+
+@mixin links {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+@mixin shadow {
+  -webkit-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 2px 11px 5px rgba(50, 50, 50, 0.75);
+}
+
+.destinos {
+  margin: 50px 0px;
+  margin-left: 15%;
+  width: 70%;
+  background-color: $card-color;
+  transition: 1s;
+  &:hover {
+    @include shadow;
+  }
+  &__foto {
+    width: 100%;
+  }
+  &__titulo {
+    margin: 15px;
+  }
+  &__descripcion {
+    margin: 15px;
+  }
+  &__boton {
+    margin: 15px;
+  }
+}
+
+.covid {
+  color: white;
+  display: flex;
+  background: rgb(241, 139, 136);
+  margin: 50px 0px;
+  margin-left: 5%;
+  width: 90%;
+  &__foto {
+    width: 20%;
+    padding: 20px;
+  }
+  &__titulo {
+    margin: 15px;
+  }
+  &__descripcion {
+    margin: 15px;
+  }
+  &__link {
+    display: inline-block;
+    margin: 5px 15px 15px 15px;
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .destinos {
+    display: flex;
+    &__foto {
+      width: 30%;
+    }
+  }
+}
