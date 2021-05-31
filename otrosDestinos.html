@@ -17,22 +17,34 @@
 </head>
 
 <body>
-    <header class="header">
+    <nav class="navbar sticky-top navbar-expand-md header">
         <div class="header__logo">
             <a href="index.html" class="link">
                 <img class="header__logo--img" src="./images/icons/world-min.png">
             </a>
         </div>
-        <nav>
-            <ul class="lista">
-                <li><a href="otrosDestinos.html" class="link">Otros Destinos</a></li>
-                <li><a href="sobreNosotros.html" class="link">Sobre Nosotros</a></li>
-                <li><a href="sobreNosotros.html#form" class="link">Contactanos!</a></li>
-                <li><a href="miPerfil.html" class="link">Mi Perfil</a></li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navButtons" id="navbarNav">
+            <ul class="lista navbar-nav">
+                <li class="nav-item">
+                    <a class="link nav-link" href="otrosDestinos.html">Otros Destinos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="sobreNosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="sobreNosotros.html#form">Contactanos!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="miPerfil.html">Mi Perfil</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-    <h1 class="titulos margin-navbar">Más destinos para disfrutar!</h1>
+        </div>
+    </nav>
+    <h1 class="titulos">Más destinos para disfrutar!</h1>
     <p class="subtitulo">¿Te quedaste con ganas de más? Mirá los otros puntos imperdibles que tenemos para vos!</p>
     <article class="destinos rounded">
         <img src="./images/cancun.jpg" class="destinos__foto rounded">
@@ -121,6 +133,15 @@
             </a>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

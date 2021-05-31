@@ -19,23 +19,35 @@
 </head>
 
 <body>
-    <header class="header">
+    <nav class="navbar sticky-top navbar-expand-md header">
         <div class="header__logo">
             <a href="index.html" class="link">
                 <img class="header__logo--img" src="./images/icons/world-min.png">
             </a>
         </div>
-        <nav>
-            <ul class="lista">
-                <li><a href="otrosDestinos.html" class="link">Otros Destinos</a></li>
-                <li><a href="sobreNosotros.html" class="link">Sobre Nosotros</a></li>
-                <li><a href="sobreNosotros.html#form" class="link">Contactanos!</a></li>
-                <li><a href="miPerfil.html" class="link">Mi Perfil</a></li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navButtons" id="navbarNav">
+            <ul class="lista navbar-nav">
+                <li class="nav-item">
+                    <a class="link nav-link" href="otrosDestinos.html">Otros Destinos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="sobreNosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="sobreNosotros.html#form">Contactanos!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="miPerfil.html">Mi Perfil</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <div class="miPerfil-container">
-        <aside class="perfil margin-navbar">
+        <aside class="perfil">
             <div class="dropdown perfil__dropdown">
                 <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

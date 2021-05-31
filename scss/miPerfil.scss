@@ -21,19 +21,20 @@
 }
 
 .miPerfil-container {
+  margin-top: 50px;
   display: block;
 }
 
 .perfil {
   @include shadow;
-  background-color: rgb(235, 235, 235);
+  background-color: $card-color;
   font-family: $secondary-font;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 70%;
   padding: 20px;
-  margin-left: 25%;
+  margin-left: 15%;
   &__dropdown {
     padding: 20px;
   }
@@ -44,21 +45,34 @@
 
 #carousel {
   display: block;
-  width: 600px;
+  width: 90%;
   margin-bottom: 50px;
-  margin-left: 10%;
+  margin-left: 5%;
   .tituloPerfil {
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
   }
   img {
-    width: 450px;
-    height: 350px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .perfil {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  #carousel {
+    .tituloPerfil {
+      font-size: 30px;
+    }
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .miPerfil-container {
+    margin-top: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,7 +80,6 @@
 
   .perfil {
     @include shadow;
-    display: inline-block;
     width: 30%;
     margin: 50px;
     &__foto {
@@ -75,7 +88,15 @@
   }
 
   #carousel {
+    width: 600px;
     margin-left: 70px;
     display: inline-block;
+    .tituloPerfil {
+      font-size: 35px;
+    }
+    img {
+      width: 450px;
+      height: 350px;
+    }
   }
 }
